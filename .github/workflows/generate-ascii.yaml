@@ -12,14 +12,14 @@ jobs:
         - name: Install Cowsay CMD
           run: sudo apt-get install cowsay -y
         - name: Execute Cowsay CMD
-          run: cowsay -f cat "Run for cover, I am a CAT...RAWR" >> cat.txt
+          run: cowsay -f dog "Run for cover, I am a dog...RAWR" >> dog.txt
         - name: Test Textfile
           run: |
-            grep -i "cat" cat.txt
-            cat cat.txt
+            grep -i  "dog" dog.txt
+            cat dog.txt
 
         - name: List Repo Files
           run: ls -ltra
 
         #- name: Read File
-      #    run: cat README.md
+      #    run: dog README.md
