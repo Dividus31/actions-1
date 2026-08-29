@@ -11,15 +11,17 @@ jobs:
 
         - name: Install Cowsay CMD
           run: sudo apt-get install cowsay -y
+
         - name: Execute Cowsay CMD
-          run: cowsay -f dog "Run for cover, I am a dog...RAWR" >> dog.txt
+          run: cowsay -f dragon "Run for cover, I am a dragon...RAWR" >> dragon.txt
+
         - name: Test Textfile
           run: |
-            grep -i  "dog" dog.txt
-            cat dog.txt
+            grep -i  "dragon" dragon.txt
+            cat dragon.txt
 
         - name: List Repo Files
           run: ls -ltra
 
         #- name: Read File
-      #    run: dog README.md
+      #    run: dragon README.md
