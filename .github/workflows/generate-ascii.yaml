@@ -12,6 +12,9 @@ jobs:
         - name: Install Cowsay CMD
           run: sudo apt-get install cowsay -y
 
+        - name: List Cowsay Animals
+          run: cowsay -f sort(names(animals))
+
         - name: Execute Cowsay CMD
           run: cowsay -f chicken "Run for cover, I am a chicken...RAWR" >> chicken.txt
 
