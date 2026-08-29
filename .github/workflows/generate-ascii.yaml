@@ -15,7 +15,7 @@ jobs:
           run: cowsay -f cat "Run for cover, I am a CAT...RAWR" >> cat.txt
         - name: Test Textfile
           run: |
-            grep -i "dat" cat.txt
+            grep -i "cat" cat.txt
             cat cat.txt
 
         - name: List Repo Files
